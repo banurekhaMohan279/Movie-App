@@ -1,0 +1,48 @@
+.MoviesList{
+	width:80%;
+	margin:0px auto;
+	list-style: none;
+}
+.MoviesList .card{
+	width:30%;
+	float:left;
+	margin:1%;
+}
+.movie-title{
+	font-size:1rem;
+	overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+.MoviesList .card:nth-child(3n+4),.MoviesList .card:nth-child(3n+5),.MoviesList .card:nth-child(3n+6){
+	margin-top:2%;
+}
+.movie-poster{
+	height: 350px;
+}
+.searchdiv{
+	float:right;
+	padding-top:7%;
+	width: 30%;
+	z-index:0;
+	margin-right: 11%;
+}
+.release-date span,.movie-rating span{
+	font-weight: bold;
+}
+.heading{
+	padding-top:10%;
+	z-index:0;
+	margin-left:1%;
+}
+.note{
+	margin-left:1%;
+	z-index:0;
+}
+.recommend::after{
+	content:"UnRecommend";
+}
+.unrecommend::after{
+	content:"Recommend";
+}

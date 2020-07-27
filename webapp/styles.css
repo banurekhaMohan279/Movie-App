@@ -1,0 +1,10 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+	margin:0px;
+	background-color:#c7ad88;
+	font-family: 'Poiret One', cursive;
+	font-weight:bold;
+}
+h3,h4,h5,h6{
+	font-weight:bold;
+}

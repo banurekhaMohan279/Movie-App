@@ -1,0 +1,25 @@
+<div class="input-group searchdiv">
+  <input type="text" class="form-control" [(ngModel)]="term" placeholder="Search by Movie Name" id="search-text-field" aria-describedby="basic-addon2" (change)="searchValue($event)"/>
+  <span class="input-group-addon" id="search-button">Search!</span>
+</div>
+<h4 class="heading">{{currentRoute.toUpperCase()}}</h4>
+<h6 class="note" *ngIf="isMyRecommended">
+	The recommendations below are displayed based on your latest search. Your latest Search was "{{latestMovie["title"]}}" 
+</h6>
+<div class="MoviesList">
+		<div class="card movie-card" *ngFor="let movie of Movies | filter:term">
+			  <h3 class="card-header movie-title">{{movie.title}}</h3>
+			  <img class="card-img-top movie-poster" src="http://image.tmdb.org/t/p/w185/{{movie.poster_path}}" alt="Card image cap"/>
+			  <div>
+				  <div class="card-body">
+					 	<p class="card-text movie-description">{{(movie.overview | slice:0:100)+'..'}}</p>
+					    <p class="card-text release-date"><span>Release Date: </span>{{movie.release_date}}</p>
+					    <p class="card-text movie-rating"><span>Rating: </span>{{movie.vote_average}}</p>
+					    <button class="btn btn-primary toggle" 
+					    [ngClass]="(recommendedList.includes(movie.id))?'recommend':'unrecommend'" 
+					    id={{movie.id}} (click)="toggleRecommend($event,movie)" ></button>
+				  </div>
+			</div>
+		</div>
+</div>		
+
