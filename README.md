@@ -1,4 +1,6 @@
-# Movie_App
+# Movie App
+
+A movie app built with React to browse through trending/ latest movies and add favourites.
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
