@@ -1,4 +1,4 @@
-# Movie App
+# Movie Application
 
 A movie app built with React to browse through trending/ latest movies and add favourites.
 
