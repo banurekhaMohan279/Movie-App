@@ -4,6 +4,11 @@ A movie app built with React to browse through trending/ latest movies and add f
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
 
+Tech stack:
+HTML
+CSS
+React
+
 ## Development server
 
 Run `npm run serve` for a dev server. Navigate to `http://localhost:3000/`. The app will automatically reload if you change any of the source files.
