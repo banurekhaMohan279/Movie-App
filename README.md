@@ -7,7 +7,8 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 Tech stack:
 HTML
 CSS
-React
+Angular
+MongoDB
 
 ## Development server
 
