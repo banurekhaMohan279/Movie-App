@@ -28,7 +28,7 @@
     "cors": "^2.8.4",
     "express": "^4.15.3",
     "mocha": "^4.0.1",
-    "mongoose": "^4.13.8",
+    "mongoose": "^4.13.21",
     "morgan": "^1.8.2",
     "ng2-search-filter": "^0.3.1",
     "rxjs": "^5.5.2",
